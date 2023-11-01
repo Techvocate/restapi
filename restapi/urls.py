@@ -21,5 +21,6 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', LegaleaseView.as_view(), name="anything")
+    #path('', LegaleaseView.as_view(), name="anything"),
+    path('', include('api.urls')),
 ] 
